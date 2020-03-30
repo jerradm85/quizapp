@@ -27,7 +27,7 @@ form {
   margin-bottom: 5px;
 }
 
-.button{
+.button {
   display: flex;
   flex-direction: row;
 }
