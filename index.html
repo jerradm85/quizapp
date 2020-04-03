@@ -9,32 +9,75 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
     integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
   <link rel="stylesheet" href="flex.css" />
-  <link rel="javascript" href="engine.js" />
-  <link rel="store" href="store.js" />
 </head>
 
 <body>
-  <header>
-    <div class="chronologo">
-      <img src="" />
-    </div>
-    <h1>Chrono Trigger Quiz</h1>
-  </header>
+  <div id="header">
+    <header>
+      <h1>Chrono Trigger Quiz App</h1>
+    </header>
+  </div>
   <nav class="division">
   </nav>
   <main>
-    <form>
-      <fieldset class="dimension">
-        <div class="questions">
-          <legend>--Welcome to the Crono Trigger Quiz--</legend>
-          <p>This quiz is designed to test your knowledge of the SNES game Chrono Trigger. Good Luck!</p>
-        </div>
-        <div class="button">
-          <button type="button" id="start"> Start Quiz!</button>
-        </div>
-      </fieldset>
-    </form>
+    <section id="start">
+      <div class="questions">
+        <legend>--Welcome to the Crono Trigger Quiz--</legend>
+      </div>
+      <div>
+        <p>This quiz is designed to test your knowledge of the SNES game Chrono Trigger.
+          You must answer each question before moving on to the next. Your score will be
+          tallied at the end of the quiz to see how well you did. Good Luck!</p>
+      </div>
+      <div class="button">
+        <button type="button" id="startButton"> Start Quiz!</button>
+      </div>
+    </section>
+    <section id="question">
+      <div id="questionText">
+        <legend id="questionTitle"></legend>
+      </div>
+      <div id="qImg">
+        <img id="questionImg" src='' alt=''/>
+      </div>
+      <form id="getFeedback" class="dimension">
+      <div id="optionsTitle">
+        <input type="radio" name="option" value="0" required>
+        <label id="label0"></label><br>
+        <input type="radio" name="option" value="1" required>
+        <label id="label1"></label><br>
+        <input type="radio" name="option" value="2" required>
+        <label id="label2"></label><br>
+        <input type="radio" name="option" value="3" required>
+        <label id="label3"></label>
+      </div>
+      <div>
+        <button id="submit" class="button" type="submit">Submit Answer</button>
+      </div>
+      </form>
+    </section>
+    <section id="feedback">
+      <div>
+        <p id="feedbackMessage"></p>
+      </div>
+      <div>
+        <img id="feedbackImg" src='' alt=''/>
+      </div>
+      <div>
+        <button id="nextQuestion">Next Question</button>
+      </div>
+
+    </section>
+    <section id="endScore">
+      <p id="finalScore"></p>
+      <img id="finalScoreImg" src='' alt='Good Job! Play again!'>
+      <p id= "scoreText"></p>
+      <button id="playAgain" alt="Retake Quiz">Retake Quiz</button>
+    </section>
   </main>
+  <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous"></script>
+  <script src="store.js"></script>
 </body>
 
 </html>

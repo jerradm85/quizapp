@@ -1,33 +1,96 @@
-header {
-    display: flex;
-    justify-content: center;
+/*-----Global CSS-----*/
+
+body {
+  background-image: url("resources/ChronoClock.png");
+  background-size: cover;
+  font-family: 'Trebuchet MS';
 }
 
-.division {
-    background-color: gray;
-    height: 3px;
-    margin-bottom: 5px;
-    border-radius: 3px;
-}
-
-form {
+main {
   display: flex;
   justify-content: center;
+}
+
+nav {
+  height: 5px;
+  margin-bottom: 5px;
+  border-radius: 3px;
+}
+
+
+legend {
+  color: gray;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+section {
+  display: flex;
+  width: 400px;
+  background: rgba(0,0,0,0.90);
+  border: 3px firebrick solid;
+  border-radius: 10px;
+  padding: 10px;
   margin-top: 10px;
 }
 
-.dimension {
+p {
+  color: gray;
+  font-size: 18px;
+  font-weight: bold;
   border-radius: 5px;
+  text-align: center;
 }
 
-.questions {
-  max-width: 400px;
-  padding: 10px;
-  margin-top: 5px;
-  margin-bottom: 5px;
+button {
+  margin-top: 10px;
+  background-color: firebrick;
+  border-radius: 10px;
+  border: 3px firebrick solid;
+  font-size: 16px;
+  color: snow;
 }
 
-.button {
+/*-----Targeted Element CSS-----*/
+
+#header {
   display: flex;
-  flex-direction: row;
+  max-width: 600px;
+  justify-content: center;
+  color: gray;
+  border: 3px firebrick solid;
+  background: rgba(0,0,0,0);
+  border-radius: 10px;
+  margin: auto;
+}
+
+#start, #feedback, #endScore, #question{
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#questionText, #optionsTitle {
+  color: gray;
+  font-size: 20px;
+}
+
+#questionImg{
+  border-radius: 10px;
+  height: 150px;
+  width: 150px;
+  border: 3px firebrick solid;
+}
+
+#feedbackImg{
+  border: 3px firebrick solid;
+  border-radius: 10px;
+  height: 175px;
+  width: 300px;
+}
+
+#finalScoreImg {
+  border: 3px firebrick solid;
+  border-radius: 10px;
+  height: 175px;
 }
