@@ -12,32 +12,20 @@
 </head>
 
 <body>
-  <div id="header">
-    <header>
-      <h1>Chrono Trigger Quiz App</h1>
-    </header>
-  </div>
+  <header id="header">
+    <h1>Chrono Trigger Quiz App</h1>
+  </header>
   <main>
     <section id="start">
-      <div class="questions">
-        <legend>Welcome to the Crono Trigger Quiz</legend>
-      </div>
-      <div>
-        <p id="intro">This quiz is designed to test your knowledge of the SNES game Chrono Trigger.
-          You must answer each question before moving on to the next. Your score will be displayed
-          after each question and again on the final screen to show you how well you did. Good Luck!</p>
-      </div>
-      <div class="button">
-        <button type="button" id="startButton"> Start Quiz!</button>
-      </div>
+      <legend>Welcome to the Crono Trigger Quiz</legend>
+      <p id="intro">This quiz is designed to test your knowledge of the SNES game Chrono Trigger.
+        You must answer each question before moving on to the next. Your score will be displayed
+        after each question and again on the final screen to show you how well you did. Good Luck!</p>
+      <button type="button" id="startButton"> Start Quiz!</button>
     </section>
     <section id="question">
-      <div id="questionText">
-        <legend id="questionTitle"></legend>
-      </div>
-      <div id="qImg">
-        <img id="questionImg" src='' alt='' />
-      </div>
+      <legend id="questionTitle"></legend>
+      <img id="questionImg" src='' alt='' />
       <form id="getFeedback">
         <div id="optionsTitle">
           <input type="radio" name="option" value="0" required>
@@ -49,21 +37,13 @@
           <input type="radio" name="option" value="3" required>
           <label id="label3"></label>
         </div>
-        <div>
           <button id="submit" class="button" type="submit">Submit Answer</button>
-        </div>
       </form>
     </section>
     <section id="feedback">
-      <div>
         <p id="feedbackMessage"></p>
-      </div>
-      <div>
-        <img id="feedbackImg" src='' alt=''/>
-      </div>
-      <div>
+        <img id="feedbackImg" src='' alt='' />
         <button id="nextQuestion">Next Question</button>
-      </div>
     </section>
     <section id="endScore">
       <p id="finalScore"></p>

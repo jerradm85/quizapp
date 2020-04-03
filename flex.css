@@ -75,6 +75,7 @@ button {
 }
 
 #optionsTitle {
+  padding-top: 10px;
   color: gray;
   font-size: 18px;
 }
