@@ -1,9 +1,10 @@
 /*-----Global CSS-----*/
 
 body {
-  background-image: url("resources/ChronoClock.png");
+  background: url("resources/ChronoClock.png") no-repeat center center fixed;
+  background-color: black;
   background-size: cover;
-  font-family: 'Trebuchet MS';
+  font-family: Tahoma;
 }
 
 main {
@@ -20,8 +21,12 @@ nav {
 
 legend {
   color: gray;
+  font-weight: bolder;
+  text-decoration: underline;
   text-align: center;
   margin-bottom: 10px;
+  font-size: 20px;
+  
 }
 
 section {
@@ -37,31 +42,35 @@ section {
 p {
   color: gray;
   font-size: 18px;
-  font-weight: bold;
   border-radius: 5px;
-  text-align: center;
+  text-align: left;
 }
 
 button {
   margin-top: 10px;
   background-color: firebrick;
-  border-radius: 10px;
-  border: 3px firebrick solid;
-  font-size: 16px;
   color: snow;
+  border: 3px firebrick solid;
+  border-radius: 10px;
+  font-size: 16px;
+
 }
 
 /*-----Targeted Element CSS-----*/
 
 #header {
   display: flex;
-  max-width: 600px;
+  max-width: 420px;
   justify-content: center;
   color: gray;
   border: 3px firebrick solid;
-  background: rgba(0,0,0,0);
+  background: rgba(0,0,0,0.90);
   border-radius: 10px;
   margin: auto;
+}
+
+#intro {
+  line-height: 175%;
 }
 
 #start, #feedback, #endScore, #question{
@@ -70,27 +79,37 @@ button {
   align-items: center;
 }
 
-#questionText, #optionsTitle {
+#optionsTitle {
   color: gray;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 #questionImg{
   border-radius: 10px;
-  height: 150px;
-  width: 150px;
+  height: 300px;
+  width: 300px;
   border: 3px firebrick solid;
 }
 
 #feedbackImg{
   border: 3px firebrick solid;
   border-radius: 10px;
-  height: 175px;
-  width: 300px;
+  width: 375px;
 }
 
 #finalScoreImg {
   border: 3px firebrick solid;
   border-radius: 10px;
-  height: 175px;
+  width: 300px;
+}
+
+#finalScore {
+  color: gray;
+  font-size: 20px;
+  font-weight: bolder;
+  text-decoration: underline;
+}
+
+#scoreText {
+  line-height: 175%;
 }

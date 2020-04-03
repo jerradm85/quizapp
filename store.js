@@ -187,18 +187,18 @@ function render() {
     if (STORE.lastQuestion == true) {
       //create a jQuery object that changes the HTML of "feedbackMessage" to 
       //a congratulatory message
-      $("#feedbackMessage").html(`Congratulations! you got it right! Score:${STORE.score}`);
+      $("#feedbackMessage").html(`Congratulations! You got it right! <b><u>Score: ${STORE.score}/${STORE.questions.length}</u></b>`);
       $("#feedbackImg").attr('src', STORE.imgRight);
       $("#feedbackImg").attr('alt', STORE.imgRightAlt);
 
     } else {//nested else change the HTML of "feedbackMessage" to "Not Quite."
-      $("#feedbackMessage").html("Not Quite! Try again!");
+      $("#feedbackMessage").html(`Not Quite! Try again! <b><u>Score: ${STORE.score}/${STORE.questions.length}</u></b>`);
       $("#feedbackImg").attr('src', STORE.imgWrong);
       $("#feedbackImg").attr('alt', STORE.imgWrongAttr);
     }
   } else if (STORE.page == "endScore") {//else if page value of STORE is "endScore"
     //change the HTML to reflect the final score.
-    $("#finalScore").html(`Final Score: ${STORE.score} out of ${STORE.questions.length}`);
+    $("#finalScore").html(`Final Score: ${STORE.score}/${STORE.questions.length}`);
     //if you get a perfect score then...
     if (STORE.score === 5) {
       $("#finalScoreImg").attr('src', STORE.img5);

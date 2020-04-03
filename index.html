@@ -25,9 +25,9 @@
         <legend>--Welcome to the Crono Trigger Quiz--</legend>
       </div>
       <div>
-        <p>This quiz is designed to test your knowledge of the SNES game Chrono Trigger.
-          You must answer each question before moving on to the next. Your score will be
-          tallied at the end of the quiz to see how well you did. Good Luck!</p>
+        <p id="intro">This quiz is designed to test your knowledge of the SNES game Chrono Trigger.
+          You must answer each question before moving on to the next. Your score will be displayed
+          after each question and again on the final screen to show you how well you did. Good Luck!</p>
       </div>
       <div class="button">
         <button type="button" id="startButton"> Start Quiz!</button>
@@ -38,22 +38,22 @@
         <legend id="questionTitle"></legend>
       </div>
       <div id="qImg">
-        <img id="questionImg" src='' alt=''/>
+        <img id="questionImg" src='' alt='' />
       </div>
       <form id="getFeedback" class="dimension">
-      <div id="optionsTitle">
-        <input type="radio" name="option" value="0" required>
-        <label id="label0"></label><br>
-        <input type="radio" name="option" value="1" required>
-        <label id="label1"></label><br>
-        <input type="radio" name="option" value="2" required>
-        <label id="label2"></label><br>
-        <input type="radio" name="option" value="3" required>
-        <label id="label3"></label>
-      </div>
-      <div>
-        <button id="submit" class="button" type="submit">Submit Answer</button>
-      </div>
+        <div id="optionsTitle">
+          <input type="radio" name="option" value="0" required>
+          <label id="label0"></label><br>
+          <input type="radio" name="option" value="1" required>
+          <label id="label1"></label><br>
+          <input type="radio" name="option" value="2" required>
+          <label id="label2"></label><br>
+          <input type="radio" name="option" value="3" required>
+          <label id="label3"></label>
+        </div>
+        <div>
+          <button id="submit" class="button" type="submit">Submit Answer</button>
+        </div>
       </form>
     </section>
     <section id="feedback">
@@ -66,12 +66,11 @@
       <div>
         <button id="nextQuestion">Next Question</button>
       </div>
-
     </section>
     <section id="endScore">
       <p id="finalScore"></p>
       <img id="finalScoreImg" src='' alt='Good Job! Play again!'>
-      <p id= "scoreText"></p>
+      <p id="scoreText"></p>
       <button id="playAgain" alt="Retake Quiz">Retake Quiz</button>
     </section>
   </main>
