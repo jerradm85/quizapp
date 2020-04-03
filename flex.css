@@ -12,13 +12,6 @@ main {
   justify-content: center;
 }
 
-nav {
-  height: 5px;
-  margin-bottom: 5px;
-  border-radius: 3px;
-}
-
-
 legend {
   color: gray;
   font-weight: bolder;
